@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2022</title>
+  
+	<!-- CSS _____________________________________________-->
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/icomoon.css" media="screen" />
+	<link rel="stylesheet" href="css/magnificpopup.css" media="screen" />
+	<link rel="stylesheet" href="style.css" media="screen" />  
+<style>
+</style>
+</head>
+<body class="home fullscreen">
+   
+	<div class="loadreveal"></div>
+	<div id="loadscreen"><div id="loader"><span></span></div></div>
+
+	<!-- HEADER _____________________________________________-->
+	<header role="banner" id="header">
+			
+		<div class="wrapper">
+
+			<!-- Logo __-->
+<!-- 			<h1 id="logo">
+				<a href="index.html" rel="home" id="logo-svg-animated"> 
+					<img src="imgs/logo-white.png" alt="logo" />
+				</a>
+			</h1> -->
+		
+			<!-- Main menu __-->
+			<nav id="mainmenu" role="navigation">
+			
+				<div id="menu-burger"><i class="icon-menu"></i></div>
+<!-- 				<div id="searchicon">
+					<i class="icon-search"></i>
+					<form action="/" method="get" id="searchbar">
+						<fieldset>
+							<input type="text" name="s" id="searchbar-input" value="" />
+							<button type="submit" id="searchbar-submit"></button>
+						</fieldset>
+					</form>				
+				</div> -->
+				<div id="menu">
+					<ul>
+						<li class="current-menu-item menu-item-has-children"><a href="./index.html">Trang Chủ</a>
+<!-- 							<ul class="sub-menu">
+								<li><a href="index.html">Fullscreen Image</a></li>
+								<li><a href="gallery-fullscreen.html">Fullscreen Gallery</a></li>
+								<li><a href="gallery-fullscreen-kenburns.html">Fullscreen KenBurns</a></li>
+								<li><a href="gallery-fullscreen-video.html">Fullscreen Video</a></li>
+							</ul> -->
+						</li>
+						<li class="menu-item-has-children"><a href="#">Kho</a>
+							<ul class="sub-menu">
+								<li><a href="#">Pictures</a></li>
+								<li><a href="#">Hàng</a></li>
+							</ul>
+						</li>
+						<li class="menu-item-has-children"><a href="./kho.html">Tết 2022</a>
+							
+						</li>
+<!-- 						<li><a href="#">Docs</a></li>
+						<li><a href="#">Journal</a>
+</li>
+						<li><a href="#">Contact</a></li> -->
+					</ul>
+				</div>
+			</nav>
+		</div>
+    </header>
+    <section id="content" role="main">
+
+		<!-- <div class="featured-image-header">
+				<img src="http://static2.bigstockphoto.com/thumbs/4/3/6/large2/63449344.jpg"  alt="" />
+			</div>-->
+
+		<div class="wrapper">
+			<!-- WYSIWYG -->
+			<div class="gallery fullscreen-gallery">
+				<figure class="post format-gallery gallery-item horizontal">
+					<header>
+<!-- 						<img src="imgs/12.jpg" alt="" /> -->
+<!-- 						<video id="bg" poster="#" loop="loop" muted="muted" class="poster__bg" style="opacity: 1; width: 1280px; height: 720px;">
+							<source src="imgs/video/1.mp4" type="audio/mp4">Your browser does not support the audio element.
+      						</video> -->
+						<video width="100%" height="60%" loop="loop" muted="muted" autoplay="autoplay">
+						  <source src="imgs/video/2.mp4" type="video/mp4" />
+						  Your browser does not support the video tag.
+						</video>
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h2 class="big no-margin">Countdown Lunar New Year 2022</h2>
+							
+                            <h1 id="demo"></h1><br>
+							<div class="blog-oneline-carousel">
+								<h3>Thông Tin</h3>
+								<div class="viewport">
+									<ul class="overview">
+										<li><p> &nbsp; liên hệ tại  <a href="https://www.facebook.com/huynhtien13/">Facebook</a></p></li>
+										<li><p> &nbsp; liên hệ Email luffymurom017@gmail.com <a href="#"></a></p></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 1, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 1, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<script src="js/jquery.min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<!-- include Masonry -->
+<script src="js/isotope.pkgd.min.js"></script> 
+<!-- include image popups -->
+<script src="js/jquery.magnific-popup.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="js/jquery.lazylinepainter.min.js"></script>
+
+
+<!-- include custom script -->
+<script src="js/scripts.js"></script>
+</html>
